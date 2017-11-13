@@ -96,18 +96,24 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* globals */
 
 html {
-  box-sizing:           border-box;
-  font-family:          Helvetica, sans-serif;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
 }
 *, *:before, *:after {
-  box-sizing:           inherit;
+  box-sizing: inherit;
 }
+img {
+  max-width: 100%;
+}
+
+/* navigation menu */
+
 .page-header {
   color: white;
   background-color: black;
-  border: 1px solid red;
   padding: 1em 1em 0 1em;
   position: fixed;
   width: 100%;
@@ -119,46 +125,109 @@ html {
   font-size: 1em;
   text-transform: uppercase;
   margin: 0;
-  border: 1px solid blue;
 }
 .fa-bars {
   color: white;
   position: absolute;
-  top: 0.5em;
+  top: 1em;
   right: 1em;
-  border: 1px solid red;
 }
+
+/* top section */
+
 .top {
-  clear: both;
-}
-.top {
-  background: url(../img/purple-bg.jpeg) no-repeat;
   color: white;
-  padding: 9em;
+  position: relative;
+}
+.background-image {
+  display: block;
+  position: relative;
+  z-index: -10;
+  width: 100%;
+}
+.top-div {
+  font-size: 1.25rem;
   position: absolute;
   top: 50%;
   left: 50%;
-  text-align: center;
-  top: 18.25em;
   transform: translate(-50%, -50%);
+  text-align: center;
+  overflow: auto;
 }
 .top h2 {
-  border: 2px solid white;
-  padding: 0.5em 0 0.5em 0;
+  border: 1.5px solid white;
+  padding: 0.5em;
+  margin: 0;
+}
+.top a {
+  color: white;
+  text-decoration: none;
+}
+.top a:hover {
+  color: gray;
+  background-color: white;
 }
 
+/* about section */
 
+.about-us {
+  margin: 5em 0 3em 2em;
+}
 
+/* project section */
 
+.latest-work {
+  margin: 0;
+  padding: 3em 2em;
+  border-top: 1px solid lightgray;
+}
+article {
+  float: left;
+  position: relative;
+  padding: 0.15em;
+}
+article img {
+  width: 100%;
+  opacity: 0.3;
+  display: block;
+  position: relative;
+  z-index: -10;
+  width: 100%;
+}
+.caption {
+  color: black;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  overflow: auto;
+}
+.caption a {
+  color: black;
+  text-decoration: none;
+}
+.caption a:hover {
+  color: white;
+  text-decoration: none;
+}
+.project-image a {
+  opacity: 0.3;
+}
+.project-image a:hover img {
+  opacity: 1;
+}
 
+/* footer */
 
-
-
-
-
-
-
-
+footer {
+  clear: both;
+  text-align: center;
+  margin: 1em 0 0 0;
+  padding: 1em 0 1em 0;
+  border-top: 1px solid lightgray;
+}
 
 /* ==========================================================================
    Helper classes
