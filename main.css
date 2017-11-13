@@ -96,22 +96,137 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* globals */
 
+html {
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+img {
+  max-width: 100%;
+}
 
+/* navigation menu */
 
+.page-header {
+  color: white;
+  background-color: black;
+  padding: 1em 1em 0 1em;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+.page-header h1 {
+  font-size: 1em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.fa-bars {
+  color: white;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
 
+/* top section */
 
+.top {
+  color: white;
+  position: relative;
+}
+.background-image {
+  display: block;
+  position: relative;
+  z-index: -10;
+  width: 100%;
+}
+.top-div {
+  font-size: 1.25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  overflow: auto;
+}
+.top h2 {
+  border: 1.5px solid white;
+  padding: 0.5em;
+  margin: 0;
+}
+.top a {
+  color: white;
+  text-decoration: none;
+}
+.top a:hover {
+  background: white;
+}
 
+/* about section */
 
+.about-us {
+  margin: 5em 0 3em 2em;
+}
 
+/* project section */
 
+.latest-work {
+  margin: 0;
+  padding: 3em 2em;
+  border-top: 1px solid lightgray;
+}
+article {
+  float: left;
+  position: relative;
+  padding: 0.15em;
+}
+article img {
+  width: 100%;
+  opacity: 0.3;
+  display: block;
+  position: relative;
+  z-index: -10;
+  width: 100%;
+}
+.caption {
+  color: black;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  overflow: auto;
+}
+.caption a {
+  color: black;
+  text-decoration: none;
+}
+.caption a:hover {
+  color: white;
+  text-decoration: none;
+}
+.project-image a {
+  opacity: 0.3;
+}
+.project-image a:hover img {
+  opacity: 1;
+}
 
+/* footer */
 
-
-
-
-
-
+footer {
+  clear: both;
+  text-align: center;
+  margin: 1em 0 0 0;
+  padding: 1em 0 1em 0;
+  border-top: 1px solid lightgray;
+}
 
 /* ==========================================================================
    Helper classes
